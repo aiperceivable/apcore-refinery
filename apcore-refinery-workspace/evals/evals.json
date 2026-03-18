@@ -1,0 +1,23 @@
+{
+  "skill_name": "apcore-refinery",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm working on the flask-apcore demo project at /Users/tercelyi/Workspace/aipartnerup/flask-apcore/examples/demo/. I want to know how good the module metadata quality is. Please assess all the .binding.yaml files in the apcore_modules/ directory and give me a detailed quality report with per-module scores.",
+      "expected_output": "A table showing 5 modules with per-dimension scores totaling 0-100. list_tasks.get should score ~65 (has readonly+cacheable annotations, no params), create_task.post ~25 (all defaults, no schema descriptions), get_task.get ~40, update_task.put ~40, delete_task.delete ~40. Average around 42.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "The metadata for the flask-apcore demo at /Users/tercelyi/Workspace/aipartnerup/flask-apcore/examples/demo/ is pretty bare-bones. Can you improve the create_task.post and delete_task.delete modules? Read the source code in app.py to understand what these functions actually do, then generate better descriptions, parameter descriptions, documentation, examples, tags, and the x-when-to-use metadata. Show me the changes before applying anything.",
+      "expected_output": "A diff showing proposed improvements for create_task.post and delete_task.delete. Should include: improved description (not placeholder), input_schema property descriptions for each parameter, documentation >50 chars, realistic examples with plausible task data, tags like ['tasks','crud'], and x-when-to-use metadata. Must NOT rename any parameters. Must show diff before writing.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need to check if the flask-apcore demo project at /Users/tercelyi/Workspace/aipartnerup/flask-apcore/examples/demo/ meets a metadata quality threshold of 60/100. Give me a pass/fail result.",
+      "expected_output": "Should report FAILED because the average score (~42) is below 60. Should list which modules are dragging the score down and suggest running refine.",
+      "files": []
+    }
+  ]
+}

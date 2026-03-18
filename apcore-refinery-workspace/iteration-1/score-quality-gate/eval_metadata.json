@@ -1,0 +1,22 @@
+{
+  "eval_id": 3,
+  "eval_name": "score-quality-gate",
+  "prompt": "I need to check if the flask-apcore demo project at /Users/tercelyi/Workspace/aipartnerup/flask-apcore/examples/demo/ meets a metadata quality threshold of 60/100. Give me a pass/fail result.",
+  "assertions": [
+    {
+      "id": "reports-fail",
+      "text": "Reports FAIL or FAILED — the average score (~42) is below the 60 threshold",
+      "type": "manual"
+    },
+    {
+      "id": "shows-scores",
+      "text": "Shows individual module scores or at least the average score",
+      "type": "manual"
+    },
+    {
+      "id": "suggests-improvement",
+      "text": "Suggests running refine or some improvement action",
+      "type": "manual"
+    }
+  ]
+}

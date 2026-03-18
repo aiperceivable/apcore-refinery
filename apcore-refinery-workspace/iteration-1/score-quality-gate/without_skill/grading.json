@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Reports FAIL or FAILED — the average score (~42) is below the 60 threshold", "passed": true, "evidence": "Result: FAIL -- Average quality score is 39/100, which does not meet the 60/100 threshold"},
+    {"text": "Shows individual module scores or at least the average score", "passed": true, "evidence": "Lists all 5 modules with individual scores (31-45 range)"},
+    {"text": "Suggests running refine or some improvement action", "passed": false, "evidence": "Report describes what's wrong but doesn't suggest a specific improvement action or tool"}
+  ]
+}

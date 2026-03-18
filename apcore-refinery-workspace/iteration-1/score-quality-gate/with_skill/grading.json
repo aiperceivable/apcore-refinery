@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Reports FAIL or FAILED — the average score (~42) is below the 60 threshold", "passed": true, "evidence": "Quality gate FAILED: 42/100 < 60"},
+    {"text": "Shows individual module scores or at least the average score", "passed": true, "evidence": "Full table with all 5 modules + per-dimension breakdown + AVERAGE: 42/100"},
+    {"text": "Suggests running refine or some improvement action", "passed": true, "evidence": "'Run /apcore-refinery:refine to improve.' appears twice"}
+  ]
+}

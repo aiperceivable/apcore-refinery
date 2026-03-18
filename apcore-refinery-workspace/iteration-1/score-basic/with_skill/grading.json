@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Report includes scores for all 5 modules (list_tasks.get, create_task.post, get_task.get, update_task.put, delete_task.delete)", "passed": true, "evidence": "All 5 modules listed in the table with individual scores"},
+    {"text": "Each module score breaks down into 7 dimensions: description, schema descriptions, documentation, annotations, examples, tags, intent metadata", "passed": true, "evidence": "Table header: Desc | Schema | Docs | Annot | Ex | Tags | Intent — all 7 dimensions present"},
+    {"text": "list_tasks.get scores highest among the 5 modules", "passed": true, "evidence": "list_tasks.get = 65, all others <= 40"},
+    {"text": "create_task.post scores lowest or near-lowest", "passed": true, "evidence": "create_task.post = 25, lowest of all 5"},
+    {"text": "Overall average score is below 50/100", "passed": true, "evidence": "AVERAGE: 42/100"},
+    {"text": "Report identifies common issues across modules", "passed": true, "evidence": "Top Issues section lists 6 findings including missing schema descriptions, no documentation, no examples, no tags, no x-when-to-use"}
+  ]
+}
